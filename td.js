@@ -12,16 +12,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Lista de palavras com dicas
     const palavrasComDicas = [
-        { palavra: "javascript", dica: "Linguagem de programação usada na web" },
-        { palavra: "html", dica: "Linguagem de marcação para estruturar páginas" },
-        { palavra: "css", dica: "Linguagem usada para estilizar páginas web" },
-        { palavra: "canvas", dica: "Elemento do HTML5 para desenhar gráficos" },
-        { palavra: "forca", dica: "Jogo de adivinhação com palavras" },
-        { palavra: "python", dica: "Linguagem de programação famosa pela simplicidade" },
-        { palavra: "react", dica: "Biblioteca JavaScript para construção de interfaces" },
-        { palavra: "node", dica: "Ambiente JavaScript para execução no servidor" },
-        { palavra: "github", dica: "Plataforma para hospedagem de código-fonte" },
-    ];
+    { palavra: "javascript", dica: "Linguagem de programação usada na web" },
+    { palavra: "html", dica: "Linguagem de marcação para estruturar páginas" },
+    { palavra: "css", dica: "Linguagem usada para estilizar páginas web" },
+    { palavra: "canvas", dica: "Elemento do HTML5 para desenhar gráficos" },
+    { palavra: "forca", dica: "Jogo de adivinhação com palavras" },
+    { palavra: "python", dica: "Linguagem de programação famosa pela simplicidade" },
+    { palavra: "react", dica: "Biblioteca JavaScript para construção de interfaces" },
+    { palavra: "node", dica: "Ambiente JavaScript para execução no servidor" },
+    { palavra: "github", dica: "Plataforma para hospedagem de código-fonte" },
+    { palavra: "frontend", dica: "Parte da aplicação visível ao usuário" },
+    { palavra: "backend", dica: "Parte da aplicação que processa os dados" },
+    { palavra: "servidor", dica: "Computador que fornece dados e serviços" },
+    { palavra: "banco", dica: "Local onde os dados são armazenados" },
+    { palavra: "api", dica: "Interface para comunicação entre sistemas" },
+    { palavra: "json", dica: "Formato leve para troca de dados" },
+    { palavra: "typescript", dica: "Superset do JavaScript com tipagem estática" },
+    { palavra: "framework", dica: "Conjunto de ferramentas para facilitar o desenvolvimento" },
+    { palavra: "bootstrap", dica: "Framework CSS para design responsivo" },
+    { palavra: "responsive", dica: "Capacidade de um site se adaptar a diferentes telas" },
+    { palavra: "algoritmo", dica: "Sequência de passos para resolver um problema" },
+    { palavra: "compilador", dica: "Programa que traduz código-fonte para linguagem de máquina" },
+    { palavra: "debug", dica: "Processo de encontrar e corrigir erros no código" },
+    { palavra: "internet", dica: "Rede global de computadores interligados" },
+    { palavra: "cookies", dica: "Pequenos arquivos armazenados pelo navegador" },
+    { palavra: "websocket", dica: "Protocolo para comunicação em tempo real na web" }
+];
+
 
     let palavraSecreta = "";
     let dica = "";
