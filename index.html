@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script defer src="td.js"></script>
+    <style>
+        /* Estilização da página */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        /* Estilização do carrossel */
+        #carousel {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .carousel-container {
+            display: flex;
+            animation: slide 30s infinite;
+        }
+        .carousel-slide {
+            width: 150%;
+            height: 400px;
+        }
+        /* Animação do carrossel para transição de imagens */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+        /* Estilização do canvas onde o jogo será desenhado */
+        canvas {
+            border: 2px solid black;
+            background-color: white;
+            margin: 20px auto;
+            display: block;
+        }
+        /* Estilização dos botões de letras */
+        #letras button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com título do jogo -->
+    <header>
+        <h1>Jogo da Forca</h1>
+    </header>
+    
+    <!-- Seção do carrossel de imagens -->
+    <section id="carousel">
+        <div class="carousel-container">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/3ZygBrg/images.jpg" class="carousel-slide" alt="images" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/5Xc7QYR2/img2.jpg" class="carousel-slide" alt="img2" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/TBw5v9Pt/img3.webp" class="carousel-slide" alt="img3" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/Cc9FWpF/img4.png" class="carousel-slide" alt="img4" border="0"></a>
+        </div>
+    </section>
+    
+    <!-- Seção que descreve as regras do jogo -->
+    <section id="regras">
+        <h2>Regras do Jogo</h2>
+        <p>O jogo da forca consiste em adivinhar uma palavra oculta escolhendo letras. Cada erro adiciona uma parte ao boneco na forca. O objetivo é adivinhar a palavra antes que o boneco seja completamente desenhado.</p>
+    </section>
+    
+    <!-- Seção do jogo da forca -->
+    <section id="jogo">
+        <!-- Canvas onde será desenhado o boneco da forca -->
+        <canvas id="forcaCanvas" width="300" height="300"></canvas>
+        <!-- Área onde a palavra será exibida -->
+        <div id="palavra"></div>
+        <!-- Contêiner para os botões das letras -->
+        <div id="letras"></div>
+        <!-- Botão para reiniciar o jogo -->
+        <button id="reiniciar">Reiniciar Jogo</button>
+    </section>
+    
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2025 Jogo da Forca</p>
+    </footer>
+</body>
+</html>
